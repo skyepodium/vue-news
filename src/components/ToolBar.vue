@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .header {
   color: white;
   background-color: #42b883;
