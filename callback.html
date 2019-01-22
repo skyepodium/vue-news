@@ -19,6 +19,11 @@ $.ajax({
         console.log('데이터 결과 호출',  data)
         result = data;
         console.log('함수 실행 결과', result)
+        getResult(function(){
+            parseResult(function(){
+                
+            })
+        })
     }
 })
 
