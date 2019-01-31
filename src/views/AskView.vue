@@ -1,12 +1,14 @@
 <template>
   <div>
-    ask
-    <div
-      v-for="ask in asks"
-      :key="ask.id"
+    <p
+      v-for="item in this.$store.state.asks"
+      :key="item.id"
     >
-      {{ ask.title }}
-    </div>
+      <a :href="item.url">
+        {{ item.title }}
+      </a>
+      <small>{{ item.time_ago }} by {{ item.user }}</small>
+    </p>
   </div>
 </template>
 
